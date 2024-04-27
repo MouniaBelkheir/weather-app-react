@@ -1,13 +1,11 @@
-
-
+import WeatherApp from "./components/WeatherApp";
 
 function App() {
-
-
-  return (
-    <div className="text-red-500">hello
-    </div>
-  )
+	return (
+		<div className="w-full h-full relative">
+			<WeatherApp />
+		</div>
+	);
 }
 
-export default App
+export default App;
