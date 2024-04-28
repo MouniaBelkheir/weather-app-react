@@ -24,20 +24,20 @@ const WeatherApp = () => {
 		}
 	};
 	return (
-		<div className="flex justify-center m-auto bg-gradient-to-b from-slate-500 to-blue-950 w-72 rounded-full my-52 relative">
-			<div className="flex p-2 text-center">
+		<>
+			<div className="flex justify-between m-2 p-1 bg-slate-300 rounded-full relative">
 				<input
 					type="text"
 					placeholder="Enter city"
 					value={city}
 					onChange={(e) => setCity(e.target.value)}
 					onKeyDownCapture={searchLocation}
-					className="outline-none bg-transparent text-slate-100 text-lg placeholder:text-gray-100 py-1 px-2"
+					className="outline-none bg-transparent text-slate-600 text-lg placeholder:text-gray-600 py-1 px-2  p-2"
 				/>
 				<img src={searchIcon} alt="Search" className="w-5 m-2 text-white" />
-            </div>
-            <Weather data={data} />
-		</div>
+			</div>
+			<Weather data={data} />
+		</>
 	);
 };
 

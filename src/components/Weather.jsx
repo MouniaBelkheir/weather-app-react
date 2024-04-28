@@ -1,25 +1,22 @@
 import PropTypes from "prop-types";
 
 const Weather = ({ data }) => {
-    return (
-        <div>
-            {data.Weather ? (
-                <div className="bg-blue-300 relative top-[10%] rounded-xl">
-                    <div className="flex justify-between">
-                        <div className="w-1/2 flex mx-auto my-4 items-center justify-between">
-                            <div className="flex flex-col items-start justify-start"></div>
-                    </div>
-                            <h1 className=" text-4xl">{data.name}</h1>
-                        </div>
-                    </div>
-                
-            ) : ""}
-        </div>
-    );
+	return (
+		<div className="flex flex-col items-start justify-start m-3 p-3 bg-gradient-to-b from-slate-500 to-blue-950 rounded-xl text-white">
+			{data.weather ? (
+				<div className="flex flex-col items-start justify-start">
+					<h1 className="text-xl">
+						{data.name}, {data.sys.country}, {data.main.temp}
+					</h1>
+					<h2>{data.weather[0].description}</h2>
+				</div>
+			) : null}
+		</div>
+	);
 };
 
 Weather.propTypes = {
-    data: PropTypes.object.isRequired,
+	data: PropTypes.any,
 };
 
 export default Weather;
