@@ -1,13 +1,5 @@
 import axios from "axios";
 import searchIcon from "/search.png";
-import clear from "/clear.png";
-import rain from "/rain.png";
-import clouds from "/clouds.png";
-import snow from "/snow.png";
-import mist from "/mist.png";
-import drizzle from "/drizzle.png";
-import humidity from "/humidity.png";
-import wind from "/wind.png";
 import { useState } from "react";
 import Weather from "./Weather";
 const WeatherApp = () => {
@@ -24,8 +16,8 @@ const WeatherApp = () => {
 		}
 	};
 	return (
-		<div className="flex flex-col items-center justify-center ">
-			<div className="flex justify-between m-2 p-1 bg-slate-300 rounded-full relative">
+        <div className="flex flex-col items-center justify-cente m-5 ">
+			<div className="flex justify-between m-2 p-1 bg-slate-300 rounded-full">
 				<input
 					type="text"
 					placeholder="Enter city"
