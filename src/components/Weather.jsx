@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 const Weather = ({ data }) => {
 	return (
 		<>
+			{" "}
 			{data.weather ? (
-				<div className="flex flex-col w-[90%] items-start justify-center m-3 bg-gradient-to-b from-slate-500 to-blue-950 rounded-xl text-white">
+				<div className="flex flex-col w-[90%] md:w-1/3 items-center justify-center m-3 bg-gradient-to-b from-blue-200 to-blue-950 rounded-3xl p-5 text-white">
 					<h1 className="text-2xl font-bold p-3">
 						{data.name}, {data.sys.country}
 					</h1>
@@ -13,7 +14,7 @@ const Weather = ({ data }) => {
 							<h2>{data.main.temp.toFixed()} °C</h2>
 							<h2>{data.weather[0].description}</h2>
 						</div>
-						<div className="w-full ">
+						<div>
 							<img
 								src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
 								alt="weather"
