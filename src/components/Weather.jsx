@@ -5,7 +5,7 @@ const Weather = ({ data }) => {
 		<>
 			{" "}
 			{data.weather ? (
-				<div className="flex flex-col w-[90%] md:w-1/3 items-center justify-center m-3 bg-gradient-to-b from-blue-200 to-blue-950 rounded-3xl p-5 text-white">
+				<div className="flex flex-col w-[90%] md:w-1/3 items-center justify-center m-3 rounded-3xl p-5 text-slate-800 z-10 backdrop-blur-sm">
 					<h1 className="text-2xl font-bold p-3">
 						{data.name}, {data.sys.country}
 					</h1>

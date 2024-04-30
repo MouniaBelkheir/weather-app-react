@@ -16,8 +16,13 @@ const WeatherApp = () => {
 		}
 	};
 	return (
-        <div className="flex flex-col items-center justify-cente m-5 ">
-			<div className="flex justify-between m-2 p-1 bg-slate-300 rounded-full">
+		<div className="flex flex-col items-center justify-center ">
+			<img
+				src="https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				alt="bg"
+				className="fixed top-0 left-0 w-screen h-screen object-cover z-0"
+			/>
+			<div className="flex justify-between m-6 p-1 bg-slate-300 rounded-full z-10">
 				<input
 					type="text"
 					placeholder="Enter city"
