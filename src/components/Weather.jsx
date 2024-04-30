@@ -10,7 +10,7 @@ const Weather = ({ data }) => {
 						{data.name}, {data.sys.country}
 					</h1>
 					<div className=" flex items-center w-full justify-between">
-						<div className="flex flex-col m-4 w-full font-semibold ">
+						<div className="flex flex-col m-4 w-full font-bold text-3xl">
 							<h2>{data.main.temp.toFixed()} °C</h2>
 							<h2>{data.weather[0].description}</h2>
 						</div>
