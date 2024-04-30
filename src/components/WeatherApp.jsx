@@ -22,16 +22,16 @@ const WeatherApp = () => {
 				alt="bg"
 				className="fixed top-0 left-0 w-screen h-screen object-cover z-0"
 			/>
-			<div className="flex justify-between m-6 p-1 bg-slate-300 rounded-full z-10">
+			<div className="flex justify-between m-6 p-1 bg-transparent/10 rounded-full z-10">
 				<input
 					type="text"
 					placeholder="Enter city"
 					value={city}
 					onChange={(e) => setCity(e.target.value)}
 					onKeyDownCapture={searchLocation}
-					className="outline-none bg-transparent text-slate-600 text-lg placeholder:text-gray-600 py-1 px-2  p-2"
+					className="outline-none bg-transparent text-slate-100 text-lg placeholder:text-gray-100 py-1 px-2  p-2"
 				/>
-				<img src={searchIcon} alt="Search" className="w-5 m-2 text-white" />
+				<img src={searchIcon} alt="Search" className="w-5 m-2" />
 			</div>
 			<Weather data={data} />
 		</div>
