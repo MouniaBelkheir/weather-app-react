@@ -30,7 +30,7 @@ const WeatherApp = () => {
 					value={city}
 					onChange={(e) => setCity(e.target.value)}
 					onKeyDownCapture={searchLocation}
-					className="outline-none bg-transparent text-slate-100 text-lg placeholder:text-gray-100 py-1 px-2  p-2"
+					className="outline-none bg-transparent text-white text-lg placeholder:text-white py-1 px-2  p-2"
 				/>
 				<img src={searchIcon} alt="Search" className="w-5 m-2" />
 			</div>
